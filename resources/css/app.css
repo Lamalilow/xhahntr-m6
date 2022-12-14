@@ -1,0 +1,10 @@
+@font-face{
+    src: url("/public/assets/fonts/Aegean-8jJ2.ttf");
+    font-family: 'Aegean', sans-serif;
+    font-weight: 400;
+}
+body{
+    font-family: 'Aegean', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
