@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col"></div>
-            <div class="col-10">
+            <div class="col-6">
                 <h1>Авторизация</h1>
                 @auth()
                     <div class="alert alert-success">Вы успешно авторизованы</div>

@@ -42,8 +42,8 @@
                                         Администрирование
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Добавить товар</a></li>
-                                        <li><a class="dropdown-item" href="#">Все товары</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('admin.product.create') }}">Добавить товар</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('admin.product.index') }}">Все товары</a></li>
                                         <li><a class="dropdown-item" href="#">Просмотр заказов</a></li>
                                         <li><a class="dropdown-item" href="#">Пользователи</a></li>
                                     </ul>

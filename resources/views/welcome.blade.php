@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/resources/css/app.css">
     <link rel="stylesheet" href="">
     <script src="/resources/js/bootstrap.js"></script>
+    <script src="/resources/js/bootstrap.bundle.js"></script>
     <title>@yield('title', 'Главная страница')</title>
 </head>
 <body>
