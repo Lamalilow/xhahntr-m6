@@ -30,10 +30,10 @@
                     @endguest
                     @auth()
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Мои заказы</a>
+                            <a class="nav-link" href="{{ route('order.all') }}">Мои заказы</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Мой аккаунт</a>
+                            <a class="nav-link" href="{{route('cabinet')}}">Мой аккаунт</a>
                         </li>
                         @if(\Illuminate\Support\Facades\Auth::user()->role == 'admin')
                             <li class="nav-item">
@@ -44,12 +44,15 @@
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="{{ route('admin.product.create') }}">Добавить товар</a></li>
                                         <li><a class="dropdown-item" href="{{ route('admin.product.index') }}">Все товары</a></li>
-                                        <li><a class="dropdown-item" href="#">Просмотр заказов</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('order.all', ['myOrder' => 'admin']) }}">Просмотр заказов</a></li>
                                         <li><a class="dropdown-item" href="#">Пользователи</a></li>
                                     </ul>
                                 </li>
                             </li>
                         @endif
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('order.basket') }}">Корзина</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('logout') }}">Выйти</a>
                         </li>
