@@ -27,6 +27,7 @@ class OrderController extends Controller
             return $item >= 1;
         });
         $request->session()->put('basket', $basket);
+
         return back();
     }
 
