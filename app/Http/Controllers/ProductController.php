@@ -45,10 +45,7 @@ class ProductController extends Controller
     {
         $validate = $request->validated();
         unset($validate['photo_file']);
-        //public/ffefefsaf232r.jpg
-        $photo = $request->file('photo_file')->store('public');
-        //explode => / => public/ffefefsaf232r.jpg => ['public', 'ffefefsaf232r.jpg']
-        $validate['photo']=explode('/', $photo)[1];
+        $validate[‘photo’]=$request->file(‘photo_file’)->store()
         Product::create($validate);
         return back()->with(['success' => true]);
     }
